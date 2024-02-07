@@ -5,7 +5,7 @@ const mongoose=require("mongoose")
 const usersRoute=require("./routes/user");
 const app = express();
 
-mongoose.connect("mongodb+srv://nandanupadhyay1234:pkPPznLjgogmQZkC@cluster0.5ltnqvy.mongodb.net/Ecommerce")
+const db=mongoose.connect("mongodb+srv://nandanupadhyay1234:pkPPznLjgogmQZkC@cluster0.5ltnqvy.mongodb.net/Ecommerce")
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));

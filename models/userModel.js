@@ -6,6 +6,7 @@ const userSchema=new mongoose.Schema({
     email:{type:String,required:[true,"Email can't be empty"],unique:true,match:[/\S+@\S+\.\S+/,"is Invalid"],index:true},
   password:{type:String,required:[true,"Please Enter Password"]},
     image:String,
+    userType:Number || 0
   },{timestamps:true})
 
 
